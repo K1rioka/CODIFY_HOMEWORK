@@ -1,0 +1,139 @@
+@media screen and (max-width: 1200px){
+    .shapes {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .square {
+        background-color: black;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .rectangle {
+        background-color: cyan;
+        width: 300px;
+        height: 150px;
+    }
+    
+    .circle {
+        background-color: coral;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    
+    .ellipse {
+        background-color: purple;
+        width: 300px;
+        height: 200px;
+        border-radius: 50%;
+    }
+} 
+
+@media screen and (max-width: 883px){
+    .shapes {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 0;
+    }
+    
+    .square {
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .rectangle {
+        background-color: green;
+        width: 200px;
+        height: 100px;
+    }
+    
+    .circle {
+        background-color: greenyellow;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .ellipse {
+        background-color: yellowgreen;
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .shapes {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 10;
+    }
+    
+    .square {
+        background-color: wheat;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .rectangle {
+        background-color: mediumaquamarine;
+        width: 200px;
+        height: 100px;
+    }
+    
+    .circle {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    .ellipse {
+        background-color: mediumslateblue;
+        width: 200px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .shapes {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 10;
+    }
+    
+    .square {
+        background-color: lavender;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .rectangle {
+        background-color: salmon;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .circle {
+        background-color: honeydew;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    
+    .ellipse {
+        background-color: goldenrod;
+        width: 100px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}

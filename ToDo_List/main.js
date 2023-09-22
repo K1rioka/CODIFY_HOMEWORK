@@ -22,16 +22,16 @@ let mas = []
 
 addButton.addEventListener("click", function() {
     const inputValue = inputField.value;
-    mas.push(inputValue)
+    mas.push({ value: inputValue, id: Date.now() })
     render()
 })
 
 function render () {
-    let final = mas.map((item) => {
+    let final = mas.map((item, idx) => {
         let res = ''
         res += `<li id="task">
         <p>${item}</p>
-        <button id="button_delete" onclick="removeItem(0)" />
+        <button id="button_delete" onclick="removeItem(${item.id})" />
         </button>
       </li>
     `
@@ -41,7 +41,7 @@ function render () {
     myList.innerHTML = final
 }
 
-function removeItem(index) {
+function removeItem(id) {
     const myList = document.getElementById("tasks");
     if (index >= 0 && index < myList.children.length) {
         myList.removeChild(myList.children[index]);
