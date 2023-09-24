@@ -1,0 +1,81 @@
+@media screen and (min-width: 1024px) and (max-width:2565px){
+body {
+    background-color: rgb(91, 89, 89);
+}
+.container{
+    display: flex;
+}
+
+.kvadrat{
+    width: 250px;
+    height: 250px;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    background-color: coral;
+}
+
+.krug {
+    width: 9500px;
+    height: 250px;
+    position: sticky;
+    top: 0px;
+    background-color: lightgreen;
+    border-radius: 100%;
+    
+}       
+.treugolnik {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid lightyellow;
+    position: absolute;
+    right: 500px;
+    left: 500px;
+}
+p {
+    font-size: 25px;
+    color: white;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width:1023px){
+body {
+    background-color: pink;
+}
+.container{
+    display: flex;
+}
+    
+.kvadrat{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 500px;
+    left: 500px;
+    background-color: darkred;
+    }    
+.krug {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    background-color: darkgreen;
+    border-radius: 100%;        
+}       
+.treugolnik {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid darkgoldenrod;
+    position: sticky;
+    top: 0px;
+}
+p {
+    font-size: 25px;
+    color: blueviolet;
+}
+}

@@ -1,0 +1,41 @@
+@media screen and (min-width:2566px){
+body {
+    background-color: cyan;
+}
+
+.container{
+    display: flex;
+}
+
+.kvadrat{
+    width: 3000px;
+    height: 100px;
+    position: static;
+    top: 0px;
+    background-color: red;
+}
+
+.krug {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: green;
+    border-radius: 100%;
+    right: 400px;
+    left: 400px;
+}
+
+.treugolnik {
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 200px solid yellow;
+    position: fixed;
+    right: 0px;
+    top: 0;
+}
+p {
+    font-size: 30px;
+}
+}
