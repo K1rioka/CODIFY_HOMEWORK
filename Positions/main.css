@@ -1,14 +1,14 @@
-@media screen and (min-width:2566px){
 body {
     background-color: cyan;
 }
 
 .container{
     display: flex;
+    position: relative
 }
 
 .kvadrat{
-    width: 3000px;
+    width: 100px;
     height: 100px;
     position: static;
     top: 0px;
@@ -37,5 +37,5 @@ body {
 }
 p {
     font-size: 30px;
-}
+    width: 80%;
 }
