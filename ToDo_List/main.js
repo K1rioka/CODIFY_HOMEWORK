@@ -20,17 +20,19 @@ const myList   = document.getElementById("tasks");
 
 let mas = []
 
-addButton.addEventListener("click", function() {
+addButton.addEventListener("click", function(event) {
     const inputValue = inputField.value;
+    console.log(inputValue)
     mas.push({ value: inputValue, id: Date.now() })
     render()
 })
 
 function render () {
+    console.log(mas)
     let final = mas.map((item, idx) => {
         let res = ''
         res += `<li id="task">
-        <p>${item}</p>
+        <p>${item.value}</p>
         <button id="button_delete" onclick="removeItem(${item.id})" />
         </button>
       </li>
@@ -42,8 +44,6 @@ function render () {
 }
 
 function removeItem(id) {
-    const myList = document.getElementById("tasks");
-    if (index >= 0 && index < myList.children.length) {
-        myList.removeChild(myList.children[index]);
-    }
+    mas = mas.filter(item => item.id !== id)
+    render()
 }
