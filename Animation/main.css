@@ -1,0 +1,73 @@
+body {
+    background-color: cyan;
+}
+
+.animation:hover {
+    animation: move 4s forwards ease-in-out;
+}
+
+.animation:active {
+    animation: resize 3s forwards ease-in-out;
+}
+
+.animation {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px;
+    animation: changeColor 3s infinite ease-in-out;
+}
+
+.start_button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.start_button:active .combined_animation {
+    animation: combined_animation 3s ease-in-out;
+}
+
+.start_button:active {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(144, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.combined_animation {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background: blue;
+    animation: combined_animation 3s ease-in-out;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(500px); }
+}
+
+@keyframes resize {
+    0% { width: 100px; height: 100px; }
+    100% { width: 400px; height: 400px; }
+}
+
+@keyframes changeColor {
+    0% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: green; }
+}
+
+@keyframes combined_animation {
+    0% { transform: translateX(0); background-color: blue; width: 150px; height: 150px;}
+    50% { transform: translateX(300px); background-color: green; width: 300px; height: 300px;}
+    100% { transform: translateX(600px); background-color: red; width: 450px; height: 450px;}
+
+}
