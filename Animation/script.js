@@ -1,5 +1,5 @@
-const animatedDiv = document.getElementsByClassName('combined_animation');
-const startButton = document.getElementsByClassName('start_button');
+const animatedDiv = document.querySelector('.elem');
+const startButton = document.querySelector('.start_button');
 
 startButton.addEventListener('click', function() {
     if (animatedDiv.classList.contains('combined_animation')) {

@@ -46,7 +46,7 @@ body {
     height: 150px;
     margin: 20px;
     background: blue;
-    animation: combined_animation 3s ease-in-out;
+    animation: combined_animatio 3s ease-in-out;
 }
 
 @keyframes move {
@@ -65,7 +65,7 @@ body {
     100% { background-color: green; }
 }
 
-@keyframes combined_animation {
+@keyframes combined_animatio {
     0% { transform: translateX(0); background-color: blue; width: 150px; height: 150px;}
     50% { transform: translateX(300px); background-color: green; width: 300px; height: 300px;}
     100% { transform: translateX(600px); background-color: red; width: 450px; height: 450px;}
