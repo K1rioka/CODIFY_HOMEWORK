@@ -64,3 +64,25 @@
 //     pyramid += "\n";
 // }
 // console.log(pyramid);
+
+function arabicToRoman(number) {
+    if (number <= 0 || number > 50) {
+        return "Введите число от 1 до 50";
+    }
+
+    const romanNumerals = [
+        "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
+        "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
+        "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX",
+        "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL",
+        "XLI", "XLII", "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L"
+    ];
+
+    return romanNumerals[number];
+}
+
+let number = parseInt(prompt("Введите число от 1 до 50:"));
+
+let romanNumber = arabicToRoman(number);
+
+console.log("Римское число: " + romanNumber);
