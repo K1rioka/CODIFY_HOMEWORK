@@ -50,7 +50,7 @@
 // }
 // console.log(sum);
 
-// Задание 7
+// // Задание 7
 // const heightNum = parseInt(prompt('Введите высоту пирамиды:'))
 // let pyramid = ""
 
@@ -85,4 +85,4 @@ let number = parseInt(prompt("Введите число от 1 до 50:"));
 
 let romanNumber = arabicToRoman(number);
 
-console.log("Римское число: " + romanNumber);
+alert("Римское число: " + romanNumber);
