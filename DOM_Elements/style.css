@@ -1,0 +1,19 @@
+.active {
+    color: blue;
+}
+
+.selected {
+    color: green;
+}
+
+.row .selected {
+    color: green;
+}
+
+a {
+    text-decoration: none;
+}
+
+.last {
+    font-weight: bold;
+}
