@@ -1,9 +1,42 @@
+
 body {
     text-align: center;
     margin: 0;
     width: 1440px;
     height: 1024px;
     background: #2C2C2C;
+}
+
+.toaster{
+    position: fixed;
+    display: block;
+    right: -500px;
+    animation: toaster_active 5s;
+    top: 20px;
+    background: white;
+    width: 150px;
+    height: 60px;
+    padding: 15px;
+}
+
+.toaster_hide {
+    display: none;
+}
+
+li {
+    display: flex;
+}
+
+@keyframes toaster_active {
+    0% {
+        right: -500px;
+    }
+    20%{
+        right: 20px
+    }
+    100%{
+        right: 20px;
+    }
 }
 
 .logo_div {
