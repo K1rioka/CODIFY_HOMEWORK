@@ -1,0 +1,362 @@
+p{
+    padding: 0;
+    margin: 0;
+}
+body {
+    text-align: center;
+    margin: 0;
+    width: 1440px;
+    height: 1024px;
+    background: #2C2C2C;
+}
+
+.toaster{
+    position: fixed;
+    display: block;
+    right: -500px;
+    animation: toaster_active 5s;
+    top: 20px;
+    background: white;
+    width: 150px;
+    height: 60px;
+    padding: 15px;
+}
+
+.toaster_hide {
+    display: none;
+}
+
+li {
+    display: flex;
+}
+
+@keyframes toaster_active {
+    0% {
+        right: -500px;
+    }
+    20%{
+        right: 20px
+    }
+    100%{
+        right: 20px;
+    }
+}
+
+.logo_div {
+    display: inline-flex;
+    width: 512.467px;
+    height: 102.286px;
+    flex-shrink: 0;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#side_line1 {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+
+h1 {
+    color:#FFF;
+    font-family: Racing Sans One;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#side_line2 {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.divider {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 79px;
+}
+
+.line {
+    width: 240px;
+    background-color: #fff;
+}
+
+#img1 {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.input_div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 826.034px;
+    height: 49.438px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #D9D9D9;
+}
+
+#add_task {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 142.686px;
+    height: 49.438px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #4F4F4F;
+    text-align: center;
+    color: #FFF;
+    font-family: Racing Sans One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#add_task:hover {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 142.686px;
+    height: 49.438px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #4F4F4F;
+    text-align: center;
+    color: #FFF;
+    font-family: Racing Sans One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#add_task:active {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 142.686px;
+    height: 49.438px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #373737;
+    text-align: center;
+    color: #FFF;
+    font-family: Racing Sans One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#add_text_input {
+    outline: none;
+    width: 700px;
+    height: 47px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#add_text_input:active{
+    width: 700px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#add_text_input:hover {
+    width: 700px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+#add_text_input:focus {
+    width: 700px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.center_line_div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#center_line {
+    width: 966px;
+}
+
+#tasks {
+    display: inline-flex;
+    list-style: none;
+    gap: 10px;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 86px;
+}
+/* 
+.btn_complete {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.btn_complete+label{
+    position: relative;
+    padding-left: 35px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    user-select: none;
+}
+
+.btn_complete+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.btn_complete:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.btn_complete:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+}
+
+.btn_complete:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+.btn_complete:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn_complete:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+}
+
+.btn_complete:disabled+label::before {
+    background-color: #e9ecef;
+} */
+
+#task {
+    display: flex;
+    position: relative;
+    margin-left: 250px;
+    padding: 2px 5px;
+    width: 850px;
+    height: 38px;
+    flex-shrink: 0;
+    flex-direction: row;
+    border-radius: 10px;
+    background: #222;   
+    align-items: center;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn_delete {
+    position: absolute;
+    right: 5px;
+    background-image: url('./images/icons8-delete-button.svg');
+    background-size: cover;
+    background-color: #999999;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+} 
+
+.btn_edit {
+    position: absolute;
+    right: 40px;
+    background-image: url('./images/icons8-edit.svg');
+    background-size: cover;
+    background-color: #999999;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.edit_div {
+    display: flex;
+}
+
+.edit_input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+    outline: none;
+    width: 600px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    border: none;
+
+}
+
+.save_btn {
+    position: absolute;
+    right: 31%;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #4F4F4F;
+    text-align: center;
+    color: #FFF;
+    font-family: Racing Sans One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.save_btn:hover {
+    background-color: #bdbdbd;
+}
+
+.new_span{
+    color:#FFF;
+    font-family: Racing Sans One;
+}
